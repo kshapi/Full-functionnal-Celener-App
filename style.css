@@ -1,0 +1,130 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+.screen .navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  padding: 0px 10px;
+  background: #53807F;
+}
+.navbar div  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 30px;
+  position: relative;
+}
+.navbar div span {
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background: black;
+  position: absolute;
+  border-radius: 10px;
+}
+.navbar div :nth-child(2) {
+  top: 7px;
+}
+.navbar div :nth-child(3) {
+  top: 21px;
+}
+.navbar .change-Year {
+  width: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  font-weight: 700;
+}
+.year-Name input {
+  height: 100%;
+  width: 70px;
+  outline: none;
+  border: none;
+  background: transparent;
+  padding: 0px 5px;
+  font-size: 16px;
+  border-radius: 3px;
+}
+.screen section {
+  width: 100%;
+  height: 420px;
+  overflow: scroll;
+  margin-top: 5px;
+}
+.main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 5px;
+}
+.main .month {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 25px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px 0px;
+}
+.main .month-Name {
+  width: 100%;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+.days, .number{
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(7, 2fr);
+}
+.days span {
+  border-bottom: 0.7px solid black;
+  border-top: 1px solid black;
+  border-radius: 10px;
+}
+.days span, .number span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  width: 38px;
+  font-size: 18px;
+  font-weight: 450;
+}
+
+.number span {
+  font-weight: 400;
+}
+.today {
+  background: #635BCF;
+  border-radius: 30px;
+  color: #fff;
+}
+.prev {
+  color: rgba(255,0,0,0.60);
+}
+.next {
+  color: rgba(0,0,255,0.60);
+}
+.valid {
+  color:  red;
+  font-size: 13px;
+  position: absolute;
+  left: 80px;
+  display: none;
+}
